@@ -6,9 +6,9 @@ if [-e "/opt/redpitaya/www/apps/risc_v_app"]; then
     echo "Symlinks already exist. Skipping."
 else
     echo "Creating symlinks."
-    ln -s "$SCRIPT_DIR/risc_v_app" "/opt/redpitaya/www/apps/risc_v_app"
-    ln -s "$SCRIPT_DIR/fpga/*" "/opt/redpitaya/www/apps/fpga"
-    ln -s "$SCRIPT_DIR/lib/*" "/opt/redpitaya/www/apps/lib"
+    sudo ln -s "$SCRIPT_DIR/risc_v_app" "/opt/redpitaya/www/apps/risc_v_app"
+    sudo ln -s "$SCRIPT_DIR/fpga/*" "/opt/redpitaya/www/apps/fpga"
+    sudo ln -s "$SCRIPT_DIR/lib/*" "/opt/redpitaya/www/apps/lib"
 fi
 
 
